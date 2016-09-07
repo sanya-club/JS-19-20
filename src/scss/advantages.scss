@@ -1,0 +1,65 @@
+.advantages {
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+
+.advantage {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  width: 33%;
+  padding: 0 40px 0 120px;
+  &__title {
+    position: relative;
+    margin-top: 15px;
+    font-size: $font-size--h3;
+    color: $text-color-heading;
+  }
+  &__number {
+    position: absolute;
+    top: -64px;
+    left: -125px;
+    font-size: 90px;
+    color: #e9e9ea;
+  }
+  &__img {
+    //    position: absolute;
+    background: url(../img/sprites.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    &--01 {
+      background-position: -10px -8px;
+    }
+    &--02 {
+      background-position: -58px -10px;
+    }
+    &--03 {
+      background-position: -108px -15px;
+    }
+  }
+  &__text {
+    max-height: 60px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    font-size: $font-size;
+    line-height: $line-height;
+  }
+  &__link {
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $link-color;
+    text-decoration: none;
+    font-weight: 500;
+    &--arrow {
+      color: $blue;
+      position: relative;
+      left: 10px;
+    }
+  }
+  &__link:hover {
+    color: $blue;
+  }
+  &__link:hover .advantage__link--arrow {
+    color: $link-color;
+  }
+}

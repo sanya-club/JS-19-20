@@ -1,0 +1,88 @@
+.services {
+  background-color: $grey;
+  padding: 50px 0 70px 0;
+  &__title {
+    margin-top: 0;
+    
+    margin-bottom: 55px;
+    color: $white;
+    font-size: $font-size--h2;
+  }
+}
+
+.service {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 37px;
+  //  box-sizing: border-box;
+  &:last-child {
+    margin-right: 0;
+  }
+  &__title {
+    text-align: center;
+    color: $white;
+    font-size: $font-size--h4;
+  }
+  &__front {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    /*  for IE*/
+    //  left: 50%;
+    //  margin-left: -70px;
+    cursor: pointer;
+  }
+  &__back {
+    display: inline-block;
+    width: 260px;
+    height: 260px;
+    background-color: $blue;
+    opacity: 0;
+    i {
+      padding-left: 120px;
+      line-height: 260px;
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+}
+
+.service>.service__wrap {
+  position: relative;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+//.service__front {
+//  position: absolute;
+//  width: 260px;
+//  height: 260px;
+//  /*  for IE*/
+//  //  left: 50%;
+//  //  margin-left: -70px;
+//  cursor: pointer;
+//}
+//.service__back {
+//  display: inline-block;
+//  width: 260px;
+//  height: 260px;
+//  background-color: $blue;
+//  opacity: 0;
+//}
+//.service__back i {
+//  padding-left: 120px;
+//  line-height: 260px;
+//  font-size: 30px;
+//  color: #fff;
+//}
+.service>.service__wrap:hover .service__front {
+  opacity: .2;
+}
+
+.service>.service__wrap:hover .service__back {
+  opacity: 1;
+}
+
+.service>.service__wrap:hover .service__title {
+  color: $yellow;
+}

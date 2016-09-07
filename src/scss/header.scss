@@ -1,0 +1,94 @@
+.logo {
+  float: left;
+  padding: 35px 0;
+  &__link {
+    display: block;
+  }
+}
+
+.social-nav {
+  float: right;
+  margin-top: 50px;
+  &__lists {
+    @include menu-lists;
+  }
+  &__list {
+    @include menu-list;
+    padding-left: 18px;
+  }
+  &__list:first-child {
+    padding-left: 0;
+  }
+  &__link {
+    display: block;
+    color: $lightnes-grey;
+    font-size: $font-size--h4;
+    font-weight: 300;
+    line-height: 34px;
+    text-decoration: none;
+    :hover {
+      color: $blue;
+    }
+  }
+}
+
+.header-nav {
+  width: 100%;
+  min-height: 54px;
+  background: $grey;
+  margin-bottom: 40px;
+}
+
+.main-menu {
+  float: left;
+  min-width: 590px;
+  max-width: 910px;
+  background: $grey;
+  &__lists {
+    @include menu-lists;
+  }
+  &__list {
+    @include menu-list;
+    padding: 17px 37px;
+    border-right: 1px solid $dark-grey;
+    &--active {
+      background: $blue;
+    }
+  }
+  &__link {
+    display: block;
+    color: $white;
+    font-size: $font-size;
+    font-weight: 300;
+    line-height: $line-height;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  &__link:hover {
+    color: $yellow;
+  }
+  &__link--active:hover {
+    color: $white;
+  }
+}
+
+.search-form {
+  float: right;
+  margin: 8px;
+  position: relative;
+  &__field {
+    padding: 10px;
+    border: 1px solid #181a1d;
+    background-color: $light-grey;
+    width: 240px;
+    color: $text-color;
+  }
+  &__submit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    background: inherit;
+    color: $text-color;
+  }
+}

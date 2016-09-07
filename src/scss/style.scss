@@ -1,0 +1,37 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "slider.scss";
+@import "advantages.scss";
+@import "services.scss";
+@import "news.scss";
+@import "accordion.scss";
+@import "partners.scss";
+@import "list-of-links.scss";
+@import "footer.scss";
+@import "modal.scss";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  background-color: $white;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
