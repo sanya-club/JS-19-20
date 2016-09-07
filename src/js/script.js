@@ -77,16 +77,51 @@ $(function ($) {
 
 
 $(function () {
-  var $modal = $('#modal');
-  var $modalOpen1 = $('.service__front');
+  var $modal1 = $('#modal1');
+  var $modalOpen1 = $('#modal-1');
+  var $modal2 = $('#modal2');
+  var $modalOpen2 = $('#modal-2');
+  var $modal3 = $('#modal3');
+  var $modalOpen3 = $('#modal-3');
+  var $modal4 = $('#modal4');
+  var $modalOpen4 = $('#modal-4');
   var $close = $('#close');
+  var $close2 = $('#close2');
+  var $close3 = $('#close3');
+  var $close4 = $('#close4');
 
   $modalOpen1.on('click', function () {
-    $modal.fadeIn(300); /*при клике показываем модальное окно*/
+    $modal1.fadeIn(300);
+    /*при клике показываем модальное окно*/
   });
 
   $close.on('click', function () {
-    $modal.fadeOut(300);
+    $modal1.fadeOut(300);
+
+  });
+
+  $modalOpen2.on('click', function () {
+    $modal2.fadeIn(300); /*при клике показываем модальное окно*/
+  });
+
+  $close2.on('click', function () {
+    $modal2.fadeOut(300);
+  });
+
+  $modalOpen3.on('click', function () {
+    $modal3.fadeIn(300); /*при клике показываем модальное окно*/
+  });
+
+  $close3.on('click', function () {
+    $modal3.fadeOut(300);
+  });
+
+  $modalOpen4.on('click', function () {
+    $modal4.fadeIn(300); /*при клике показываем модальное окно*/
+  });
+
+  $close4.on('click', function () {
+    $modal4.fadeOut(300);
   });
 });
 
